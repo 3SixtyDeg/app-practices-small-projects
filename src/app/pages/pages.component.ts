@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 
-declare function initSideBarMenu(): void;
-declare function initCustom(): void;
+declare function initPage(): void;
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
@@ -13,11 +12,10 @@ declare function initCustom(): void;
 export class PagesComponent implements OnInit {
 
   constructor() { 
-    initSideBarMenu();
-    initCustom();
   }
 
   ngOnInit(): void {
+    initPage();
   }
 
 }

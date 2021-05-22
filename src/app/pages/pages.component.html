@@ -1,11 +1,13 @@
-<div id="main-wrapper">
-    <app-header></app-header>
-    <app-aside></app-aside>
-    <div class="page-wrapper">
-        <div class="container-fluid">
-            <app-breadcrumb></app-breadcrumb>
-            <router-outlet></router-outlet>
-        </div>
+<app-navbar></app-navbar>
+<div id="layoutSidenav">
+    <app-sidenav></app-sidenav>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-4">
+                <app-breadcrumb></app-breadcrumb>
+                <router-outlet></router-outlet>
+            </div>
+        </main>
         <app-footer></app-footer>
     </div>
 </div>
