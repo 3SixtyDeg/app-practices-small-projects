@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
 
   public login() {
     localStorage.setItem('uid', 'ok');
-    this.router.navigate(['/main/dashboard']);
+    this.router.navigate(['/home/dashboard']);
   }
 
 }
