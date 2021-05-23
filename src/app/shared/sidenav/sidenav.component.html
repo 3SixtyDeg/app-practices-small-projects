@@ -8,68 +8,58 @@
                     Dashboard
                 </a>
                 <a class="nav-link" routerLink="./usuarios" routerLinkActive="active">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                     Usuarios
                 </a>
                 <a class="nav-link"  routerLink="./perfiles" routerLinkActive="active">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-id-card-alt"></i></div>
                     Perfiles
                 </a>
                 <a class="nav-link"  routerLink="./sucursales" routerLinkActive="active">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-store"></i></div>
                     Sucursales
                 </a>
                 <a class="nav-link"  routerLink="./ventas" routerLinkActive="active">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-cash-register"></i></div>
                     Ventas
                 </a>
-                <ul>
-                    <li class="nav-link" routerLinkActive="active">
-                        <a>Ca</a>
-                        <ul>
-                            <li>
-                                <a class="nav-link" routerLink="./catalogos/configuracion" routerLinkActive="active">Conf</a>
-                            </li>
-                            <li class="nav-link" routerLinkActive="active">
-                              <a>P</a>
-                              <ul>
-                                <li class="nav-link" routerLinkActive="active">
-                                  <span routerLink="./catalogos/permisos/usuario-permisos">UP</span>
-                                </li>
-                                <li class="nav-link" routerLinkActive="active">
-                                  <span routerLink="./catalogos/permisos/perfil-permisos">PP</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                    </li>
-                </ul>
-                <!-- <a data-bs-toggle="collapse" data-bs-target="#collapsePages" 
+                <!-- Ejemplo básico de menú estático multinivel, se adapta al dieño del sidenav -->
+                <a data-bs-toggle="collapse" data-bs-target="#collapsePages" 
                     aria-expanded="false" aria-controls="collapsePages" 
-                    [class]="(rlaConf.isActive || rlaPerU.isActive || rlaPerP.isActive) ? 'nav-link cursor-pointer active' : 'nav-link collapsed cursor-pointer'">
-                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                    Catálogos
-                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    [class]="getClassActive(rlaConf.isActive, rlaPerU.isActive, rlaPerP.isActive)">
+                    <div class="sb-nav-link-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                        Catálogos
+                    <div class="sb-sidenav-collapse-arrow">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
                 </a>
                 <div id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion"
-                    [class]="(rlaConf.isActive || rlaPerU.isActive || rlaPerP.isActive) ? 'collapse show' : 'collapse'">
+                    [class]="getClassCollapse(rlaConf.isActive, rlaPerU.isActive, rlaPerP.isActive)">
                     <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                         <a class="nav-link" routerLink="./catalogos/configuracion" routerLinkActive="active" #rlaConf="routerLinkActive">Configuración</a>
                         <a data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" 
                         aria-expanded="false" aria-controls="pagesCollapseError"
-                        [class]="(rlaPerU.isActive || rlaPerP.isActive) ? 'nav-link cursor-pointer active' : 'nav-link collapsed cursor-pointer'">
+                        [class]="getClassActive(false, rlaPerU.isActive, rlaPerP.isActive)">
                             Permisos
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages"
-                            [class]="(rlaPerU.isActive || rlaPerP.isActive) ? 'collapse show' : 'collapse'">
+                            [class]="getClassCollapse(false, rlaPerU.isActive, rlaPerP.isActive)">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" routerLink="./catalogos/permisos/usuario-permisos" routerLinkActive="active" #rlaPerU="routerLinkActive">Usuario Permisos</a>
                                 <a class="nav-link" routerLink="./catalogos/permisos/perfil-permisos" routerLinkActive="active" #rlaPerP="routerLinkActive">Perfil Permisos</a>
                             </nav>
                         </div>
                     </nav>
-                </div> -->
+                </div>
+                <a class="nav-link cursor-pointer" (click)="logout()">
+                    <div class="sb-nav-link-icon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    Salir
+                </a>
             </div>
         </div>
         <div class="sb-sidenav-footer">
