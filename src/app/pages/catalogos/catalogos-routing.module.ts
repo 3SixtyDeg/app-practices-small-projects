@@ -1,15 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 
 
 
 const routes: Routes = [
-  {
-      path: '',
-      redirectTo: '/page-not-found',
-      pathMatch: 'full'
-  },
   {
     path: 'configuracion',
     loadChildren: () => import('./configuracion/configuracion.module').then(m => m.ConfiguracionModule)
@@ -17,7 +11,8 @@ const routes: Routes = [
   {
     path: 'permisos',
     loadChildren: () => import('./permisos/permisos.module').then(m => m.PermisosModule)
-  }
+  },
+  { path: '', redirectTo: '/page-not-found', pathMatch: 'full' }
 ];
 
 @NgModule({
