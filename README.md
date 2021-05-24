@@ -1,27 +1,73 @@
-# AppAdminWebRossli
+# app-practices-small-projects
+> Estructura de directorios para pequeños proyectos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+![](./src/assets/img/header.png)
 
-## Development server
+## Tabla de contenidos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Demo 🖥️
+- Comenzando 🚀
+    - Pre-requisitos 📋
+    - Instalación 🔧
+- Despliegue 📦
+- Construido con 🛠️
+    - Temas abordados 📚
+- Versionado 📌
+- Autores ✒️
+- Licencia 📄
 
-## Code scaffolding
+## Demo 🖥️
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Ver demo](https://stackblitz.com/github//magranadosb/app-practices-small-projects)
 
-## Build
+## Comenzando 🚀
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-## Running unit tests
+### Pre-requisitos 📋
+* [Angular CLI](https://angular.io/cli)
+* [NodeJS](https://nodejs.org/en/)
+* [GIT](https://git-scm.com)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Instalación 🔧
 
-## Running end-to-end tests
+```
+git clone https://github.com/magranadosb/app-practices-small-projects.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+_Después de clonar el proyecto, ingresa a la carpeta creada app-practices-small-projects._
 
-## Further help
+```
+npm install
+```
+## Despliegue 📦
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng serve -o
+```
+
+## Construido con 🛠️
+
+* [Angular CLI v12.0.0](https://angular.io/)
+* [Start Bootstrap - SB Admin](https://github.com/startbootstrap/startbootstrap-sb-admin)
+
+### Temas abordados 📚
+
+* Rutas
+* RouterLink
+* RouterLinkActive
+* Lazy-loading
+
+## Versionado 📌
+
+Se usa [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/magranadosb/app-practices-paises/tags).
+
+## Autores ✒️
+
+* **Marco Antonio Granados** - *Trabajo Inicial* - [magranadosb](https://github.com/magranadosb)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/magranadosb/app-practices-paises/graphs/contributors) quíenes han participado en este proyecto. 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
