@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app-admin-web-rossli';
+  title = 'app-practices-small-projects';
 }

@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app-admin-web-rossli": {
+    "app-practices-small-projects": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app-admin-web-rossli",
+            "outputPath": "dist/app-practices-small-projects",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "app-admin-web-rossli:build:production"
+              "browserTarget": "app-practices-small-projects:build:production"
             },
             "development": {
-              "browserTarget": "app-admin-web-rossli:build:development"
+              "browserTarget": "app-practices-small-projects:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "app-admin-web-rossli:build"
+            "browserTarget": "app-practices-small-projects:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "app-admin-web-rossli"
+  "defaultProject": "app-practices-small-projects"
 }
