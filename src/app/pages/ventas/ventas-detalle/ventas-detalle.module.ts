@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { VentasDetalleRoutingModule } from './ventas-detalle-routing.module';
 import { CommonModule } from '@angular/common';
+import { VentasDetalleComponent } from './ventas-detalle.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    VentasDetalleComponent
+  ],
   imports: [
     CommonModule,
     VentasDetalleRoutingModule
