@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PagesComponent } from './pages.component';
-import { ErrorPageComponent } from '../shared/error-page/error-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -51,7 +51,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        component: ErrorPageComponent
+        component: PageNotFoundComponent
       }
     ]
   }

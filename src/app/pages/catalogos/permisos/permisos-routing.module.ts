@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ErrorPageComponent } from '../../../shared/error-page/error-page.component';
+import { PageNotFoundComponent } from '../../page-not-found/page-not-found.component';
 
 
 
 const routes: Routes = [
   {
       path: '',
-      component: ErrorPageComponent
+      component: PageNotFoundComponent
   },
   {
     path: 'perfil-permisos',
