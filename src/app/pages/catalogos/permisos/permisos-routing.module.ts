@@ -6,8 +6,9 @@ import { PageNotFoundComponent } from '../../page-not-found/page-not-found.compo
 
 const routes: Routes = [
   {
-      path: '',
-      component: PageNotFoundComponent
+    path: '',
+    redirectTo: '/page-not-found',
+    pathMatch: 'full'
   },
   {
     path: 'perfil-permisos',
