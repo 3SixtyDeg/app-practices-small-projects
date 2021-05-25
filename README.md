@@ -1,11 +1,3 @@
-
-<style>
-  .markdown-body table td, .markdown-body table th {
-      padding: 21px 50px 0px 50px !important;
-      border: none !important;
-  }
-</style>
-
 <p align="center">
  <img width="100px" src="./src/assets/img/logo.png" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">app-practices-small-projects</h2>
@@ -118,7 +110,8 @@ Se usa [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 <table>
   <tr>
-    <td align="center">
+    <td align="center"
+    style="padding: 6px 13px; border: none;">
       <a href="https://github.com/magranadosb">
         <img src="https://avatars.githubusercontent.com/u/75822956" width="50px;" alt="magranadosb"/><br>
         <sub>
@@ -126,7 +119,7 @@ Se usa [SemVer](http://semver.org/) para el versionado. Para todas las versiones
         </sub>
       </a>
     </td>
-    <td align="center">
+    <td align="center" style="padding: 6px 13px; border: none;">
 
   ![magranadosb](https://github-readme-stats.vercel.app/api?username=magranadosb&show_icons=true)
 
