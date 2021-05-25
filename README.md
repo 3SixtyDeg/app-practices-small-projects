@@ -1,11 +1,9 @@
 
 <style>
-  
-  table td, table th {
-      padding: 21px 50px 0px 50px;
-      border: none;
+  .markdown-body table td, .markdown-body table th {
+      padding: 21px 50px 0px 50px !important;
+      border: none !important;
   }
-
 </style>
 
 <p align="center">
