@@ -1,4 +1,12 @@
 
+<style>
+  
+  table td, table th {
+      padding: 21px 50px 0px 50px;
+      border: none;
+  }
+
+</style>
 
 <p align="center">
  <img width="100px" src="./src/assets/img/logo.png" align="center" alt="GitHub Readme Stats" />
@@ -120,7 +128,7 @@ Se usa [SemVer](http://semver.org/) para el versionado. Para todas las versiones
         </sub>
       </a>
     </td>
-    <td>
+    <td align="center">
 
   ![magranadosb](https://github-readme-stats.vercel.app/api?username=magranadosb&show_icons=true)
 
