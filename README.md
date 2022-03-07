@@ -18,7 +18,7 @@
      </a>
 </p> 
 <p align="center">
-    <a href="https://stackblitz.com/github/magranadosb/app-practices-small-projects">Ver demo</a>
+    <a href="https://magranadosb.github.io/app-practices-small-projects/">Ver demo</a>
 </p>
 <br/>
 <br/>
